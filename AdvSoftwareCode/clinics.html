@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        Body{
+            background-color: beige;
+            background-repeat:repeat;
+            background-size:100%
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-orange">
+        <div class="container-fluid">
+            <div class="d-flex w-50">
+                <a class="navbar-brand mr-0" href="home-user.html"><i style="font-size: 24px" class="fa fa-angle-left"></i>
+                    Back</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+            </div>
+    
+            
+            <form class="navbar-form position:absolute;" style="position:absolute;left:12cm;" action="homepage.php" method="Post">
+                <div class="navbar-collapse collapse justify-content-center navbar-nav mr-auto ml-auto" id="collapsingNavbar">
+                    <input placeholder="Type to search something" type="text"
+                           style="width: 450px;border-radius: 15px;border: none;padding-left: 130px;height:30px ">
+                           <a href="searchClinic.html" style="color:#422b11"><i class="fa fa-search" style="padding-left: 10px;"></i></a>
+                </div>
+                </form>
+        
+            <span class="navbar-text small text-truncate mt-1 w-50 text-right">
+                <i style="font-size: 16px; padding-left: 190px;" class="fa fa-user">
+                Aseel Alsahsah</i></span>
+                
+            <span style="color: white;font-weight: normal" class="  mt-1 ml-4 w-10 text-right"><a  href="index.html" style="color: white; text-decoration: none;">
+                Logout</a></span>
+        </div>
+    </nav> 
+
+<div class="container text-center mt-5">
+    <h1>Clinics information</h1>
+    <div class="row mt-5 font-weight-bold border-bottom" style="color: #71573A;font-size: 20px;">
+        <div class="col-md-3">Clinic Name</div>
+        <div class="col-md-3">Location</div>
+        <div class="col-md-3">Number</div>
+        <div class="col-md-3">Fees</div>
+    </div>
+    <div class="row mt-5 font-weight-bold">
+        <div class="col-md-3">Linda Nutrition Center</div>
+        <div class="col-md-3">Amman, Jubaiha</div>
+        <div class="col-md-3">065001616</div>
+        <div class="col-md-3">10 JOD</div>
+
+    </div>
+    <div class="row mt-5 font-weight-bold">
+        <div class="col-md-3">Dima Nutrition</div>
+        <div class="col-md-3">Amman, Khalda</div>
+        <div class="col-md-3">065001616</div>
+        <div class="col-md-3">35 JOD</div>
+
+    </div>
+    <div class="row mt-5 font-weight-bold">
+        <div class="col-md-3">BHealthy Diet & Nutrition Center</div>
+        <div class="col-md-3">Amman, Abdoun</div>
+        <div class="col-md-3">(06) 593 3922</div>
+        <div class="col-md-3">15 JOD (Does not include procedures)</div>
+    </div>
+
+    <button class="btn " data-toggle="modal" data-target="#elegantModalForm4" 
+            style="background-color:#71573A;color: white;margin-top: 90px;width: 200px">Book Appointment</button>
+
+</div>
+
+
+<div class="modal fade" id="elegantModalForm4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <!--Content-->
+        <div class="modal-content form-elegant" style="background: #71573A;
+                mix-blend-mode: normal;
+                border-radius: 28px;
+">
+            <!--Header-->
+            <div class="modal-header text-center">
+                <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3 text-white" id="myModalLabel">
+                    
+                    <strong><center>Book Appointment</center></strong></h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <!--Body-->
+            <div class="modal-body mx-4">
+                <!--Body-->
+                <div class="md-form mb-5">
+                    <label data-error="wrong" data-success="right" for="location"
+                           style="color: white">Clinic Name</label>
+
+                </br>
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"
+                    style="width: 420px; background-color: #71573A ;border-bottom:1px solid white;color: white; text-align: right;">
+                        <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                              <li><a href="#" style="color: black;">Linda Nutrition Center</a></li>
+                              <li><a href="#" style="color: black;">Dima Nutrition</a></li>
+                              <li><a href="#" style="color: black;">BHealthy Diet & Nutrition Center</a></li>
+                            </ul>
+                </div>
+
+                <div class="md-form mb-5">
+                    <label data-error="wrong" data-success="right" for="location"
+                           style="color: white">Appointment Time</label>
+
+                </br>
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"
+                    style="width: 420px; background-color: #71573A ;border-bottom:1px solid white;color: white; text-align: right;">
+                        <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                              <li><a href="#" style="color: black;">9:30 A.M</a></li>
+                              <li><a href="#" style="color: black;">11:30 A.M</a></li>
+                              <li><a href="#" style="color: black;">13:00 P.M</a></li>
+                            </ul>
+                </div>
+                <div class="md-form mb-5">
+                    <label data-error="wrong" data-success="right" for="Form-email"
+                           style="color: white">Phone Number</label>
+
+                    <input style="background-color: #71573A;border:none;border-bottom:1px solid white;color: white"
+                           type="email" id="Form-email" class="form-control validate">
+                </div>
+                <div class="text-center mb-3">
+                   <center><a  href="clinics.html" style="color: black; text-decoration: none;">
+                        <button style="border-radius: 73px;width: 200px" type="button"
+                            class="btn blue-gradient btn-block btn-rounded z-depth-1a">Book
+                    </button></a></center> 
+                </div>
+
+            </div>
+            
+
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
